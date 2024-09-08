@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primarycolor: #595dae; 
+    --subcolor:#000;
+}
+
+main{
+    display: flex;
+    justify-content: flex-end;
+}
+main .search{
+    position: fixed;
+    width: 40%;
+    background-color: var(--primarycolor);
+    left: 0;
+    height: 100vh;
+}
+
+main.result{
+    width: 60%;
+
+}
+.search div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    align-items: center;
+    width:90% ;
+    flex-wrap: wrap;
+}
+.search div h2{
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: white;
+}
+.search-input{
+    width:90% ;
+    height: 50px;
+    border: 0;
+    padding: 5px;
+}
+#search-button i{
+    width: 35px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    text-align: center;
+    background-color: #000;
+    line-height: 40px;
+}
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 30px;
+}
+.result > div{
+    width: 48%;
+
+    
+}
+
+.card{
+    box-shadow: 0 5px 20px #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.card .card-img img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+}
+.card-info1 , .card-info2{
+    padding: 30px 0;
+    text-align: center;
+}
+.card-info1 a , .card-info2 a{
+    display: inline-block;
+    width: 200px;
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 15px 0;
+    padding: 15px 0;
+} 
+.card-info1 a:hover , .card-info2 a:hover{
+    background-color: var(--subcolor);
+}
+
+.showdetails{
+    display: none;
+}
+
+
+.recipe-details{
+    position: fixed;
+ width: 45%;
+    background-color: var(--primarycolor);
+    left: 0;
+    height: 100vh;
+    padding:80px 30px;
+}
+.recipe-details i{
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+ border-radius: 50%;
+ font-size: 20px;   
+ line-height: 30px;
+color:#000;
+cursor: pointer;
+}
+
+.recipe-details > *{
+    margin: 25px;
+    color: #fff;
+    
+}
+.recipe-details h2{
+font-size: 35px;
+}
+.recipe-details p{
+font-size: 18px;
+}

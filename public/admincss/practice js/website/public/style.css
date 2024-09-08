@@ -1,0 +1,863 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: sans-serif Josefin Slab;
+    background-color: wheat;
+    color: black;
+    width: 100%;
+    /* background-image: linear-gradient(to right  , black  , white ) ; */
+  }  
+
+
+
+
+
+.landing{
+  height: calc(100vh - 10px);
+  /* background-image: linear-gradient(to right  , black  , white ) ; */
+background-origin: border-box;
+}
+header .header ul i{
+  display: none;
+}
+
+@media  (max-width : 1099px) {
+
+.landing #head{
+  width: 100%;
+  height: 100%;
+}
+
+.landing #word{
+  font-size: 45px;
+}
+
+
+  .landing #head p:first-child{
+    font-size: 25px;
+  position: absolute;
+  top: 60px;
+  right: 119%
+
+}
+.landing #head p:last-child{
+  position: absolute;
+  font-size: 25px;
+  right: 119%;
+  top: 160px;
+  
+}
+.header ul li a{
+  margin-right: 10px; 
+}
+}
+@media (max-width: 550px){
+  .landing #head p:first-child{
+position: absolute;
+top: 100px !important;
+right: 80% !important;
+
+
+
+  }
+  .landing #head p:last-child{
+    position: absolute;
+    right: 80% !important;
+    top: 215px !important;
+  }
+}
+
+
+
+
+@media (min-width: 375px) and (max-width : 799px)
+{
+
+  .containe .skills-progress .progress-bar{
+    width: 300px !important;
+  }
+
+  .langauge .langauge-level .langauge-bar{
+    width: 300px !important;
+  }
+  .header ul{
+    position: relative;
+  }
+  header .header ul i{
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+            display: block;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        top: 13px
+
+  }
+header .header ul{
+display: none;
+}
+
+.header h2{
+  width: 100%;
+}
+  .landing #word{
+    font-size: 45px;
+  }
+
+  .landing #head p:first-child{
+    font-size: 25px;
+  position: absolute;
+  top: 60px;
+  right: 119%
+
+}
+.landing #head p:last-child{
+  position: absolute;
+  font-size: 25px;
+  right: 119%;
+  top: 160px;
+  
+}
+
+.soical-media a #face{
+left: 0 !important;
+}
+.soical-media a #git{
+  left: 105px !important;
+}
+.soical-media a #linkedin{
+  left: 210px !important;
+}
+.soical-media a #insta{
+  left: 315px !important;
+} 
+}
+@media (max-width : 450px){
+  .soical-media a #face{
+    left: 20px !important;
+  }
+  .soical-media a #git{
+    left: 125px !important;
+  }
+  .soical-media a #linkedin{
+    left: 230px !important;
+  }
+  .soical-media a #insta{
+    left: 335px !important;
+  } 
+}
+
+
+
+
+
+
+.land{
+
+left: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: 1s;
+}
+ #head{
+  transition: all 3s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+    width: 40%;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 30px;
+    position: absolute;
+   top: 30%;
+    left: 50%;
+ 
+}
+.showhead{
+opacity: 1 !important;
+filter: blur(0) !important;
+transform: translateY(0) !important;
+
+}
+.land h1{
+    font-size: 85px;
+    width: 40%;
+    margin: 60px 40px;
+    text-transform: uppercase;
+    padding: 40px;
+}
+.land h1::first-line{
+  color: blue;
+}
+#head p:first-child{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px; 
+    padding: 12px ;
+    text-transform: capitalize; 
+    color: darkslateblue;
+    
+ 
+    
+}
+
+#head p:last-child{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    font-size: 30px;
+ text-transform: capitalize;
+    padding: 10px;
+    color: darkslateblue;
+   
+}
+
+ i{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    font-size: 30px;
+    color: white;
+   
+    
+    cursor: pointer;
+}
+
+.hide{
+position: absolute;
+left: -600px;
+
+}
+.side {
+color: white;}
+.none{
+width: 0;
+}
+
+header{
+    position: absolute;
+    top: -150px;
+    width: 100%;
+
+    transition: 1s;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+ 
+}
+#btn{
+  width:96px ;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  font-size: 20px;
+  bottom: 0;
+  right: 46%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  background-color: white;
+  cursor: pointer;
+border-radius: 20px;
+border-top:2px solid red;
+background-color: rgba(172 167 167 / 40%);
+animation: border 1s linear infinite ;
+
+}
+#btn:hover{
+  background-color:rgba(172 167 167 / 100%); ;
+}
+
+@keyframes border{
+  0%,50%{
+    border-top: transpwharent;
+    transition: .7s;
+
+  }
+  100%{
+  border-top: 3px solid red;
+  }
+
+}
+
+
+
+
+
+
+.dis{
+  transition: 1s;
+opacity: 0;
+}
+.header h2{
+    padding: 30px 50px;
+    letter-spacing: 3px;
+
+}
+h2 div{
+  display:inline ;
+  animation: ani 1s linear infinite;
+}
+
+
+h2  div:first-child{
+    
+    color: blue;
+    animation-delay: 0s;
+
+}
+h2 div:nth-child(2){
+  animation-delay: .1s;
+}
+h2 div:nth-child(3){
+  animation-delay: .3s;
+}
+h2 div:nth-child(4){
+  animation-delay: .4s;
+}
+h2 div:nth-child(5){
+  animation-delay: .5s;
+}
+h2 div:nth-child(6){
+  animation-delay:.6s;
+}
+h2 div:nth-child(7){
+animation-delay: .7s;
+}
+
+@keyframes ani{
+  0% ,80% {
+    color: #333;
+    text-shadow: none;
+  }
+  100%{
+    color: #FFF;
+    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 20px #fff;
+    text-shadow: 0 0 40px #fff;
+    text-shadow: 0 0 80px #fff;
+    text-shadow: 0 0 120px #fff;
+    text-shadow: 0 0 160px #fff;
+  }
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+   padding: 30px 30px;
+    list-style: none;
+margin-right: 45px;
+}
+.header li a{
+  font-size: 18px;
+    text-decoration: none;
+color: white;
+padding: 10px;
+}
+.header li a:hover , .active{
+
+    background-color: rgb(43 49 192);
+ transition: all .7s ease-in-out;
+
+ 
+ ;
+ 
+}
+.header-side{
+top: 0;}
+
+
+span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+
+  
+
+  #word , #word2{
+
+    opacity: 1;
+    transition: opacity 1s ease-in-out ;
+  }
+  .word{
+    opacity: 0 !important;
+  }
+
+.containe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+.containe h2{    
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 35px;
+  color: bisque}
+.containe .skills-progress{
+   margin-bottom: 25px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+
+}
+
+.containe .skills-progress h4{
+  padding-bottom: 15px;
+   margin: 0 15px;
+  letter-spacing: 1px;
+
+}
+.containe .skills-progress .progress-bar{
+  position: relative;
+  width: 500px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 3px 4px 5px 0px;
+  background-color: white;
+  color: white;
+
+}
+
+.containe .skills-progress .progress-bar span{
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 30px;
+
+  background-color: black;
+  transition: width .5s linear}
+
+.show{
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  transform: translateX(0) !important; 
+}
+.langauge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.langauge h2{
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+  font-size: 35px;
+  color: bisque
+}
+.langauge .langauge-level{
+  margin-bottom: 25px;
+
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.langauge .langauge-level h4{ padding-bottom: 15px;
+
+ letter-spacing: 1px;
+margin-top: 10px;}
+.langauge .langauge-level .langauge-bar{
+  position: relative;
+  width: 500px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 3px 4px 5px 0px;
+  background-color: white;
+  color: white;
+}
+.langauge .langauge-level span{  
+  position: absolute;
+  padding: 5px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1;
+  text-align: center;
+  color: black;
+  border-radius: 30px;
+/* 
+  background-color: black; */
+  transition: width .5s linear}
+
+  .my-courses{
+    width: 100%;
+    margin-top: 50px;
+width: 100%;
+      height: 100vh;
+     transition: 1s;
+animation: border 3s ease-in-out infinite;
+margin-top: 100px;
+  }
+  
+ 
+  .my-courses h3{
+   text-align: center;
+    margin-bottom: 25px;
+    line-height: 2.2;
+    letter-spacing: 2px;
+ 
+  }
+
+@keyframes border{
+  0% ,25%{
+
+    border: 2px solid transparent;
+   
+    
+    
+  }
+  50% ,75%{
+    border: 2px solid #333;
+  }
+  100%{
+  border: 2px solid transparent;
+  }
+}
+
+.soical-media{
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  right: 5%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+
+}
+
+
+.soical-media h2{
+  top: 40%;
+  position: relative;
+  right: ll;
+  left: 50%;
+  animation: h 2s linear infinite;
+}
+.soical-media i{
+  font-size: 50px;
+
+
+}
+
+.soical-media a #face{
+  position: absolute;
+  left: -100px;
+ justify-content: center;
+  background-color: white;
+  color: blue;
+  width: 49px;
+  overflow: hidden;
+  border-radius: 76%;
+  text-align: center;
+
+}
+.soical-media a #insta{
+position: absolute;
+left: 500px;
+background-image: linear-gradient(to bottom , orange ,rgb(204, 13, 160) );
+border-radius: 80%;
+width: 48px;
+overflow: hidden;
+text-align: center;
+}
+.soical-media a #linkedin{
+  width: 44px;
+  background-color: white;
+  color: #0b0b8f;
+  border-radius: 20%;
+  overflow: hidden;
+  height: 46px;
+  text-align: center;;
+  left: 300px;
+
+}
+.soical-media a i:last-child{
+  position: absolute;
+  left: 100px;   
+   background-color: #410c73;
+  color: white;
+  width: 45px;
+  
+  border-radius: 55%;
+}
+
+
+
+
+.soical-media i:hover{
+transform: rotate(360deg);
+transition: 2s;
+}
+
+@keyframes h{
+  0%{
+    opacity: 1;
+    color: black;
+    animation-delay: 1s;
+  }
+  25%{
+    opacity: .5;
+    color: black;
+    animation-delay: .5s;
+  }
+  50%{
+    opacity: 0;
+    color: black;
+    animation-delay: .3s;
+  }
+  75%{
+    opacity: .5;
+    color: black;
+    animation-delay: .5s;
+  }
+  100%{
+    opacity: 1;
+    color: black;
+    animation-delay: 1s;
+  }
+
+
+
+
+}
+h2{
+  animation: h 3s linear infinite;
+  color: black;
+}
+
+
+@keyframes icon{  
+  0%, 100%{
+transform: rotate(360deg);
+transition: 1.5s;
+
+}}
+
+@media  (max-width : 999px) {
+
+
+  .Contact-me h2{
+position: absolute !important;
+left: 49% !important;
+transform: translate(-50%, -50%) !important;
+bottom: 176px !important;
+font-size: 35px !important;
+  }
+
+.Contact-me .email h4{
+  position: absolute !important;
+    bottom: 147px !important;
+    left: 30% !important;
+    font-size: 23px !important;
+    letter-spacing: 3px !important;
+}
+.Contact-me .email i{
+  position: absolute !important;
+  bottom: 144px !important;
+  left: 26% !important;
+  color: #333 !important;
+}
+
+.Contact-me .phone h4{
+  position: absolute !important;
+    bottom: 73px !important;
+    left: 329px !important;
+    font-size: 23px !important;
+    letter-spacing: 3px !important
+}
+.Contact-me .phone i{
+  position: absolute !important;
+  left: 254px !important;
+  margin-left: 35px !important;
+  bottom: 71px !important;
+  color: #333
+}
+}
+
+
+
+@media (min-width: 444px) and (max-width : 799px){
+  .Contact-me h2{
+    position: absolute !important;
+    left: 49% !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: 176px !important;
+    font-size: 35px !important;
+      }
+    
+    .Contact-me .email h4{
+      position: absolute !important;
+        bottom: 147px !important;
+        left: 16% !important;
+        font-size: 23px !important;
+        letter-spacing: 3px !important;
+    }
+    .Contact-me .email i{
+      position: absolute !important;
+      bottom: 143px !important;
+      left: 8% !important;
+      color: #333 !important;
+    }
+    
+    .Contact-me .phone h4{
+      position: absolute !important;
+        bottom: 73px !important;
+        left: 192px !important;
+        font-size: 23px !important;
+        letter-spacing: 3px !important
+    }
+    .Contact-me .phone i{
+      position: absolute !important;
+      left: 112px !important;
+      margin-left: 35px !important;
+      bottom: 71px !important;
+      color: #333
+    }
+}
+@media (max-width : 443px){
+  .Contact-me h2{
+    position: absolute !important;
+    left: 49% !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: 176px !important;
+    font-size: 35px !important;
+      }
+    
+    .Contact-me .email h4{
+      position: absolute !important;
+        bottom: 147px !important;
+        left: 16% !important;
+        font-size: 20px !important;
+        letter-spacing: 3px !important;
+    }
+    .Contact-me .email i{
+      position: absolute !important;
+      bottom: 145px !important;
+      left: 9% !important;
+      color: #333 !important;
+      font-size: 23px;
+    }
+    
+    .Contact-me .phone h4{
+      position: absolute !important;
+        bottom: 73px !important;
+        left: 100px !important;
+        font-size: 23px !important;
+        letter-spacing: 3px !important
+    }
+    .Contact-me .phone i{
+      position: absolute !important;
+      left: 25px !important;
+      margin-left: 35px !important;
+      bottom: 71px !important;
+      color: #333;
+      font-size: 23px;
+    }
+
+}
+.Contact-me{
+  position: relative;
+    margin-top: 40px;
+    height: 450px;
+    display: none;
+}
+.Contact-me h2{
+  position: absolute;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  bottom: 100px;
+  font-size: 35px}
+  .Contact-me .phone i{
+    position: absolute;
+    left: 150px;
+    margin-left: 35px;
+    bottom: 35px;
+    color: #333;
+  }
+  .Contact-me .phone h4{
+    position: absolute;
+    bottom: 37px;
+    left: 219px;
+    font-size: 23px;
+    letter-spacing: 3px;
+    
+  }
+
+  .Contact-me .email i{
+    position: absolute;
+    bottom: 35px;
+    left: 60%;
+    color: #333;
+  }
+
+  .Contact-me .email h4{
+    position: absolute;
+    bottom: 37px;
+    left: 63%;
+    font-size: 23px;
+    letter-spacing: 3px;
+  }
+
+.up{
+  margin-top: 10px;
+  position: relative;
+
+}
+.up i{
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  display: none;
+
+animation: up 2s linear infinite;}
+
+  @keyframes up{
+    0% ,25%{
+   transform: translateY(-3px);
+   opacity: .8;
+    }
+    26% ,50%{
+ transform: translateY(-6px);
+ opacity: .4;
+    }
+    51%,75%{
+      transform: translateY(-3px);
+      opacity: 0;
+    }
+    76% ,100%{
+      transform: translateY(0);
+      opacity: .4;
+    }
+  }
+      
+

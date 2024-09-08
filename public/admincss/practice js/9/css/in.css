@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+ 
+    display: flex;
+    justify-content: center;
+}
+.container #sidebar{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s;
+ 
+}
+#sidebar #arrow ,#arrow2{
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    color: white;
+    width: 20px;
+    padding: 4px;
+  
+}
+#arrow::after{
+content: "";
+position: absolute;
+height: 100vh;
+top: 65px;
+width: 4px;
+right: 0;
+background-color: black;
+
+}
+#sidebar h1{
+    color: black;
+    
+    padding: 100px 62px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 25px 60px;
+
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+li a:hover , .active{
+background-color: yellow;
+}
+
+ul::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    bottom: -66px;
+}
+.footer{
+    position: absolute;
+    left: 30%;
+    bottom: 8%;
+}
+.footer i{
+    font-size: 20px;
+    padding: 8px 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.img img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    padding: 10px;
+    border: 2px solid black;
+    z-index: 100;
+}
+.img:after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 338px;
+    background-color: yellow;
+    left: -17px;
+    top: 60px;
+}
+.right{
+    width: 70%;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.word h1{
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 70px;
+    padding-bottom: 30px;
+}
+.word h1::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background-color: black;
+    top: 57%;
+}
+.word p{
+    padding-top: 30px ;
+}
+#arrow-right{
+    position: absolute;
+    left: 30%;
+    background-color: black;
+    color: white;
+    width: 20px;
+    display: none;
+    padding: 4px;
+}
+#fav{
+display: none;
+
+}
+#fav img{
+    width: 200px;
+    display: none;
+    transition: 1s;
+   
+}
